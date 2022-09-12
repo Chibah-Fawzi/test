@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="header">
+
+    </div>
+    <form name="loginForm" onsubmit="return validateForm(event) ">
+        <label for="Name">Name:</label>
+        <input type="text" name="name" placeholder="example@example.com" />
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="*********" />
+        <button type="submit">Login</button>
+        <button type="reset">cancel</button>
+    </form>
+
+    <div id="main" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    </div>
+
+
+    <style>
+        html,
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script src="products.js"></script>
+</body>
+
+</html>

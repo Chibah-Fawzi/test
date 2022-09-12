@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <form onsubmit="handleSubmit">
+        <input name="race" type="text">
+        <input name="location" type="text">
+        <input name="type" type="text">
+
+        <button type="submit"></button>
+    </form>
+
+
+    <script>
+        const handleSubmit = (e) => {
+            const race = e.target.race.value
+            const location = e.target.location.value
+            const type = e.target.type.value
+
+            const searchedPets = pets.filter(pet => pet.race == race && pet.location == location && pet.type == type)
+        }
+
+
+
+        const pets = [
+            {
+                name,
+                race,
+                type,
+                location,
+                adopted,
+                photo
+            }
+        ]
+
+    </script>
+</body>
+
+</html>
