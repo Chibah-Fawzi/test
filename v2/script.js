@@ -17,7 +17,7 @@ for (let i = 0; i < full_names.length; i++) {
 
 function login(email, password) {
 
-    const found = users.find(user => user.email == email && user.password == password)
+    const found = users.find(element => element.email == email && element.password == password)
 
     if (found) {
         alert('bienvenu')
